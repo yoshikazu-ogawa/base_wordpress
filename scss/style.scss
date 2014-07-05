@@ -1,0 +1,189 @@
+@charset "utf-8";
+
+/*-----------------------------------------------------------
+
+	Reset Style
+
+---------------------------------------------------------- */
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,
+fieldset,legend,input,textarea,p,blockquote,th,td {
+	margin:0;
+	padding:0;
+}
+
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+
+fieldset,img {
+	border:0;
+}
+
+address,caption,cite,code,dfn,em,strong,th,var {
+	font-style:normal;
+	font-weight:normal;
+}
+
+ol,ul {
+	list-style:none;
+}
+
+caption,th {
+	text-align:left;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-size:100%;
+	font-weight:normal;
+}
+
+input,textarea,select {
+	font-family:inherit;
+	font-size:inherit;
+	font-weight:inherit;
+}
+
+/*-----------------------------------------------------------
+
+	Common
+		
+---------------------------------------------------------- */
+
+body{
+	font-size: 12px;
+	font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ","Meiryo",arial,Osaka,"ＭＳ Ｐゴシック","MS PGothic",Sans-Serif;
+	color: #333;
+}
+
+/* decoration
+------------------------------------------------ */
+
+/* text */
+a{color:#960A00;text-decoration:none;}
+a:hover{color:#b21818;}
+a:active, a:focus {outline: 0;}
+
+.gosic{font-family :'Hiragino Kaku Gothic Pro','ヒラギノ角ゴ Pro W3','メイリオ', Meiryo, 'ＭＳ Ｐゴシック', sans-serif;}
+.serif{font-family:"ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "ＭＳ Ｐ明朝", "MS PMincho",  serif;}
+
+/* float */
+.f-left{float: left;}
+.f-right{float: right;}
+
+/* clearfix */
+.clearfix {width:100%;}
+.clearfix:after{content: ""; display: block; clear: both;}
+
+
+/*-----------------------------------------------------------
+
+	stracture
+		
+---------------------------------------------------------- */
+
+#header{
+	width: 980px;
+	margin: 0 auto;
+}
+
+#gnav{
+	
+}
+
+#contents{
+	width: 980px;
+	margin: 0 auto;
+}
+
+#main{
+	float: left;
+	width: 720px;
+}
+
+#side{
+	float: right;
+	width: 215px;
+}
+
+#footer{
+	width: 100%;
+	margin-top: 50px;
+	background-position: center top;
+	background-repeat: repeat-x;
+}
+
+/*-----------------------------------------------------------
+
+	header
+		
+---------------------------------------------------------- */
+
+/* description
+-------------------------------------- */
+
+#description{
+	width: 980px;
+	margin: 0 auto;
+}
+
+/* header-inner
+-------------------------------------- */
+
+
+/*-----------------------------------------------------------
+
+	contents
+		
+---------------------------------------------------------- */
+
+
+/* top
+-------------------------------------- */
+
+
+
+
+/* single.php
+-------------------------------------- */
+
+
+
+/* page.php
+-------------------------------------- */
+
+
+
+
+
+/* main
+-------------------------------------- */
+
+
+
+/*-----------------------------------------------------------
+
+	side
+		
+---------------------------------------------------------- */
+
+
+
+/*-----------------------------------------------------------
+
+	footer
+		
+---------------------------------------------------------- */
+
+#footer-inner{
+	width: 950px;
+	padding-top: 5px;
+	margin: 0 auto;
+	height: 30px;
+	font-size: 12px;
+}
+
+#copyright{
+	text-align: right;
+}
