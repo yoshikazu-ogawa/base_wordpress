@@ -5,10 +5,10 @@
 <div id="main">
 main
 
-<!--/main--></div>
+</div><!--/main-->
 
 <?php get_sidebar(); ?>
 
-<!--/contents--></div>
+</div><!--/contents-->
 
 <?php get_footer(); ?>
