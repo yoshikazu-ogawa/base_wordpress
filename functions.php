@@ -29,6 +29,7 @@ function remove_admin_menu_links() {
 
 //　ヘッダープログラム追加
 ほげらった
+やっぱ消したい・・・
 
 // セルフピンバック禁止
 function no_self_ping( &$links ) {
