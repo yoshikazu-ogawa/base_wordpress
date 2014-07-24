@@ -28,7 +28,7 @@ function remove_admin_menu_links() {
 }
 
 //　ヘッダープログラム追加
-hogehoge
+ほげらった
 
 // セルフピンバック禁止
 function no_self_ping( &$links ) {
