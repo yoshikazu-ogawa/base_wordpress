@@ -27,9 +27,6 @@ function remove_admin_menu_links() {
      //remove_menu_page('options-general.php'); // 設定
 }
 
-//　ヘッダープログラム追加
-hogehoge
-
 // セルフピンバック禁止
 function no_self_ping( &$links ) {
 $home = get_option( 'home' );
