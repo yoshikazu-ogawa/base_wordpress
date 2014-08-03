@@ -27,6 +27,13 @@ function remove_admin_menu_links() {
      //remove_menu_page('options-general.php'); // 設定
 }
 
+<<<<<<< HEAD
+=======
+//　ヘッダープログラム追加
+ほげらった
+やっぱ消したい・・・
+
+>>>>>>> 46f744023f6d73de996e56551d6aae7b1a2f72c2
 // セルフピンバック禁止
 function no_self_ping( &$links ) {
 $home = get_option( 'home' );
