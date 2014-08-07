@@ -48,7 +48,7 @@ input, textarea { background-image: -webkit-linear-gradient(hsla(0,0%,100%,0), h
 input[type="checkbox"]{ -webkit-appearance: checkbox; }
 input[type="radio"]{ -webkit-appearance: radio; }
 button::-moz-focus-inner, input::-moz-focus-inner { border:0; padding:0; }
-img { -ms-interpolation-mode:bicubic; }
+img { -ms-interpolation-mode:bicubic;vertical-align: middle; }
 
 /*-----------------------------------------------------------
 
