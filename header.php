@@ -30,8 +30,8 @@
 
 <header id="header">
 
-	<h1 class="swing">LOGO</h1>
-	<h2 id="description"><?php bloginfo('description'); ?></h2>
+	<h1>LOGO</h1>
+	<h2><?php bloginfo('description'); ?></h2>
 
 	<nav>
 		<ul>
