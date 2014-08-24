@@ -115,8 +115,6 @@ a:active, a:focus {outline: 0;}
 #footer{
 	width: 100%;
 	margin-top: 50px;
-	background-position: center top;
-	background-repeat: repeat-x;
 }
 
 /*-----------------------------------------------------------
@@ -125,16 +123,7 @@ a:active, a:focus {outline: 0;}
 		
 ---------------------------------------------------------- */
 
-/* description
--------------------------------------- */
 
-#description{
-	width: 980px;
-	margin: 0 auto;
-}
-
-/* header-inner
--------------------------------------- */
 
 
 /*-----------------------------------------------------------
@@ -190,5 +179,5 @@ a:active, a:focus {outline: 0;}
 }
 
 #copyright{
-	text-align: right;
+	text-align: center;
 }
