@@ -62,10 +62,12 @@ body{
 	color: #333;
 }
 
-/* decoration
------------------------------------------------- */
-
 /* text */
+strong.marker.yellow {
+  background: linear-gradient(transparent 40%, #ff9 40%); 
+}
+
+/* link */
 a{color:#960A00;text-decoration:none;}
 a:hover{color:#b21818;}
 a:active, a:focus {outline: 0;}
