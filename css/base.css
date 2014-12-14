@@ -1,0 +1,236 @@
+/*====================================================================
+
+	リセット
+
+====================================================================*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, data, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+}
+
+article, aside, figure, figcaption,footer,
+h1, h2, h3, h4, h5, h6, header, hgroup, menu, nav, section {
+	display: block;
+	font-weight: normal;
+}
+
+li {
+	list-style: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+caption, th, td {
+	text-align: left;
+	vertical-align: top;
+	font-weight: normal;
+}
+
+img {
+	vertical-align: bottom;
+}
+a img {
+	border: none;
+}
+
+q:before, q:after {
+	content: '';
+}
+
+em, strong, i {
+	font-weight: normal;
+	font-style: normal;
+}
+
+address, caption, cite, code, dfn, var {
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+/*====================================================================
+
+	ヘルパークラス
+
+====================================================================*/
+
+.clearfix {
+	*zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.group {
+	overflow: hidden;
+	*zoom: 1;
+}
+
+.mt0  {margin-top: 0px!important;}
+.mt1  {margin-top: 1px!important;}
+.mt2  {margin-top: 2px!important;}
+.mt3  {margin-top: 3px!important;}
+.mt4  {margin-top: 4px!important;}
+.mt5  {margin-top: 5px!important;}
+.mt6  {margin-top: 6px!important;}
+.mt7  {margin-top: 7px!important;}
+.mt8  {margin-top: 8px!important;}
+.mt9  {margin-top: 9px!important;}
+.mt10 {margin-top:10px!important;}
+.mt11 {margin-top:11px!important;}
+.mt12 {margin-top:12px!important;}
+.mt13 {margin-top:13px!important;}
+.mt14 {margin-top:14px!important;}
+.mt15 {margin-top:15px!important;}
+.mt20 {margin-top:20px!important;}
+.mt25 {margin-top:25px!important;}
+.mt30 {margin-top:30px!important;}
+.mt35 {margin-top:35px!important;}
+.mt40 {margin-top:40px!important;}
+.mt45 {margin-top:45px!important;}
+.mt50 {margin-top:50px!important;}
+.mt55 {margin-top:55px!important;}
+.mt60 {margin-top:60px!important;}
+.mt65 {margin-top:65px!important;}
+.mt70 {margin-top:70px!important;}
+.mt75 {margin-top:75px!important;}
+.mt80 {margin-top:80px!important;}
+.mt85 {margin-top:85px!important;}
+.mt90 {margin-top:90px!important;}
+.mt95 {margin-top:95px!important;}
+.mt100 {margin-top:100px!important;}
+.mt110 {margin-top:110px!important;}
+.mt120 {margin-top:120px!important;}
+.mt130 {margin-top:130px!important;}
+.mt140 {margin-top:140px!important;}
+.mt150 {margin-top:150px!important;}
+.mt160 {margin-top:160px!important;}
+
+.mt1em  {margin-top: 1em!important;}
+.mt2em  {margin-top: 2em!important;}
+.mt3em  {margin-top: 3em!important;}
+
+.mb0  {margin-bottom: 0px!important;}
+.mb5  {margin-bottom: 5px!important;}
+.mb10 {margin-bottom:10px!important;}
+.mb15 {margin-bottom:15px!important;}
+.mb20 {margin-bottom:20px!important;}
+.mb25 {margin-bottom:25px!important;}
+.mb30 {margin-bottom:30px!important;}
+.mb35 {margin-bottom:35px!important;}
+.mb40 {margin-bottom:40px!important;}
+.mb45 {margin-bottom:45px!important;}
+.mb50 {margin-bottom:50px!important;}
+.mb60 {margin-bottom:60px!important;}
+.mb70 {margin-bottom:70px!important;}
+.mb80 {margin-bottom:80px!important;}
+.mb90 {margin-bottom:90px!important;}
+.mb100 {margin-bottom:100px!important;}
+
+.ml0  {margin-left: 0px!important;}
+.ml1  {margin-left: 1px!important;}
+.ml2  {margin-left: 2px!important;}
+.ml3  {margin-left: 3px!important;}
+.ml4  {margin-left: 4px!important;}
+.ml5  {margin-left: 5px!important;}
+.ml6  {margin-left: 6px!important;}
+.ml7  {margin-left: 7px!important;}
+.ml8  {margin-left: 8px!important;}
+.ml9  {margin-left: 9px!important;}
+.ml10 {margin-left:10px!important;}
+.ml11 {margin-left:11px!important;}
+.ml12 {margin-left:12px!important;}
+.ml13 {margin-left:13px!important;}
+.ml14 {margin-left:14px!important;}
+.ml15 {margin-left:15px!important;}
+.ml20 {margin-left:20px!important;}
+.ml25 {margin-left:25px!important;}
+.ml30 {margin-left:30px!important;}
+.ml35 {margin-left:35px!important;}
+.ml40 {margin-left:40px!important;}
+.ml45 {margin-left:45px!important;}
+.ml50 {margin-left:50px!important;}
+.ml55 {margin-left:55px!important;}
+.ml60 {margin-left:60px!important;}
+.ml65 {margin-left:65px!important;}
+
+.mr0  {margin-right: 0px!important;}
+.mr5  {margin-right: 5px!important;}
+.mr10 {margin-right:10px!important;}
+.mr15 {margin-right:15px!important;}
+.mr20 {margin-right:20px!important;}
+.mr25 {margin-right:25px!important;}
+.mr30 {margin-right:30px!important;}
+.mr35 {margin-right:35px!important;}
+.mr40 {margin-right:40px!important;}
+.mr45 {margin-right:45px!important;}
+.mr50 {margin-right:50px!important;}
+
+.ms {margin-left:15px; margin-right:10px;}
+.ms10 {margin-left:10px; margin-right:10px;}
+.ms20 {margin-left:20px; margin-right:20px;}
+.ms30 {margin-left:30px; margin-right:30px;}
+
+.taL {text-align:left!important;}
+.taC {text-align:center!important;}
+.taR {text-align:right!important;}
+.vaT {vertical-align: top!important;}
+.vaM {vertical-align: middle!important;}
+.vaB {vertical-align: bottom!important;}
+
+.fL {float:left!important;}
+.fR {float:right!important;}
+.fN {float:none!important;}
+
+.fs10 {font-size:10px!important;}
+.fs11 {font-size:11px!important;}
+.fs12 {font-size:12px!important;}
+.fs13 {font-size:13px!important;}
+.fs14 {font-size:14px!important;}
+.fs15 {font-size:15px!important;}
+.fs16 {font-size:16px!important;}
+.fs17 {font-size:17px!important;}
+.fs18 {font-size:18px!important;}
+.fs19 {font-size:19px!important;}
+.fs20 {font-size:20px!important;}
+.fs21 {font-size:21px!important;}
+.fs22 {font-size:22px!important;}
+.fs23 {font-size:23px!important;}
+.fs24 {font-size:24px!important;}
+
+.cL {clear:left!important;}
+.cR {clear:right!important;}
+.cB {clear:both!important;}
+.clear {clear:both!important;}
+
+.bold {font-weight: bold!important;}
+
+
+.fade {
+	-webkit-transition: opacity .3s;
+	transition: opacity .3s;
+}
+.fade:hover {
+	opacity: 0.7;
+}

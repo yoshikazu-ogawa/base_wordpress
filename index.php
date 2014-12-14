@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-
+testhogera
 <div id="contents" class="clearfix">
 
 <div id="main">
