@@ -1,3 +1,3 @@
-<aside id="side">
+<aside id="sidebar" role="complementary">
 side
 </aside>

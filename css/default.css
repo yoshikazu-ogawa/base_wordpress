@@ -1,0 +1,241 @@
+@charset "euc-jp";
+
+body {
+  background-color: <{$page_bgcolor}>;
+  background-image: url(<{$page_bgimg}>);
+  color: <{$font_color}>;
+}
+a {
+  color: <{$link_normal}>;
+}
+a:hover {
+  color: <{$link_hover}>;
+}
+
+/*
+ * layout
+ */
+#wrapper {
+  max-width: 1000px;
+}
+
+/*
+ * contents
+ */
+
+#contents {
+  float: right;
+  padding-left: 30px;
+}
+
+#contents .topicpath-nav {
+  margin-bottom: 5px;
+}
+  #contents .topicpath-nav li {
+    padding: 0;
+  }
+  #contents .topicpath-nav a {
+    margin-left: 5px;
+  }
+
+/*
+ * side
+ */
+
+#side .unstyled img {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/*
+ * temp
+ */
+
+/* font */
+.txt_l { text-align: left; }
+.txt_c { text-align: center; }
+.txt_r { text-align: right; }
+.txt_fwn { font-weight: normal; }
+.txt_fwb { font-weight: bold; }
+.txt_10 { font-size: 10px; }
+.txt_12 { font-size: 12px; }
+.txt_14 { font-size: 14px; }
+.txt_16 { font-size: 16px; }
+.txt_18 { font-size: 18px; }
+.txt_20 { font-size: 20px; }
+.txt_24 { font-size: 24px; }
+.txt_28 { font-size: 28px; }
+.txt_c_333 {color: #333;}
+
+/* background */
+.bgc_gray {
+  background-color: #f1f1f1;
+}
+
+/* margin */
+.mar_auto { margin: 0 auto; }
+.mar_0 { margin: 0; }
+.mar_t_0 { margin-top: 0; }
+.mar_r_0 { margin-right: 0; }
+.mar_b_0 { margin-bottom: 0; }
+.mar_l_0 { margin-left: 0; }
+.mar_5 { margin: 5px; }
+.mar_t_5 { margin-top: 5px; }
+.mar_r_5 { margin-right: 5px; }
+.mar_b_5 { margin-bottom: 5px; }
+.mar_l_5 { margin-left: 5px; }
+.mar_t_10 { margin-top: 10px; }
+.mar_r_10 { margin-right: 10px; }
+.mar_b_10 { margin-bottom: 10px; }
+.mar_l_10 { margin-left: 10px; }
+.mar_t_20 { margin-top: 20px; }
+.mar_r_20 { margin-right: 20px; }
+.mar_b_20 { margin-bottom: 20px; }
+.mar_l_20 { margin-left: 20px; }
+.mar_t_30 { margin-top: 30px; }
+.mar_r_30 { margin-right: 30px; }
+.mar_b_30 { margin-bottom: 30px; }
+.mar_l_30 { margin-left: 30px; }
+.mar_t_50 { margin-top: 50px; }
+.mar_r_50 { margin-right: 50px; }
+.mar_b_50 { margin-bottom: 50px; }
+.mar_l_50 { margin-left: 50px; }
+
+/* padding */
+.pad_v_10 { padding: 10px 0; }
+.pad_v_20 { padding: 20px 0; }
+.pad_v_30 { padding: 30px 0; }
+.pad_0 { padding: 0; }
+.pad_t_0 { padding-top: 0; }
+.pad_r_0 { padding-right: 0; }
+.pad_b_0 { padding-bottom: 0; }
+.pad_l_0 { padding-left: 0; }
+.pad_5 { padding: 5px; }
+.pad_t_5 { padding-top: 5px; }
+.pad_r_5 { padding-right: 5px; }
+.pad_b_5 { padding-bottom: 5px; }
+.pad_l_5 { padding-left: 5px; }
+.pad_10 { padding: 10px; }
+.pad_t_10 { padding-top: 10px; }
+.pad_r_10 { padding-right: 10px; }
+.pad_b_10 { padding-bottom: 10px; }
+.pad_l_10 { padding-left: 10px; }
+.pad_20 { padding: 20px; }
+.pad_t_20 { padding-top: 20px; }
+.pad_r_20 { padding-right: 20px; }
+.pad_b_20 { padding-bottom: 20px; }
+.pad_l_20 { padding-left: 20px; }
+.pad_30 { padding: 30px}
+.pad_t_30 { padding-top: 30px; }
+.pad_r_30 { padding-right: 30px; }
+.pad_b_30 { padding-bottom: 30px; }
+.pad_l_30 { padding-left: 30px; }
+
+/* border */
+.bor_t_1 { border-top: 1px solid #eee; }
+.bor_r_1 { border-right: 1px solid #eee; }
+.bor_b_1 { border-bottom: 1px solid #eee; }
+.bor_l_1 { border-left: 1px solid #eee; }
+
+/* vertical align */
+.va-10 { vertical-align: -10%; }
+.va-20 { vertical-align: -20%; }
+.va-30 { vertical-align: -30%; }
+.va-35 { vertical-align: -35%; }
+.va-40 { vertical-align: -40%; }
+
+@media (max-width: 980px) {
+  /* ~980px */
+  #base_gmoWrapp,
+  #gmo_CMSPbar {
+    overflow: hidden;
+    min-width: 100% !important;
+    width: 100% !important;
+  }
+}
+@media (max-width: 768px) {
+  /* ~768px */
+  #contents {
+    padding-left: 0;
+  }
+}
+@media (max-width: 480px) {
+  /* ~480px */
+}
+
+/*
+ * icons
+ */
+.icon-user { background-position: -208px 0px; }
+.icon-lg-b.icon-user { background-position: -312px 0px; }
+.icon-adduser { background-position: -240px 0px; }
+.icon-lg-b.icon-adduser { background-position: -360px 0px; }
+.icon-login { background-position: -48px -80px; }
+.icon-lg-b.icon-login { background-position: -72px -120px; }
+.icon-logout { background-position: -32px -80px; }
+.icon-lg-b.icon-logout { background-position: -48px -120px; }
+.icon-home { background-position: -176px -16px; }
+.icon-lg-b.icon-home { background-position: -264px -24px; }
+.icon-mail { background-position: -64px 0px; }
+.icon-lg-b.icon-mail { background-position: -96px 0px; }
+.icon-pencil { background-position: -96px 0px; }
+.icon-lg-b.icon-pencil { background-position: -144px 0px; }
+.icon-help { background-position: -272px -80px; }
+.icon-lg-b.icon-help { background-position: -408px -120px; }
+.icon-cart { background-position: -176px -64px; }
+.icon-lg-b.icon-cart { background-position: -264px -96px; }
+.icon-search { background-position: -208px -16px; }
+.icon-lg-b.icon-search { background-position: -312px -24px; }
+.icon-chevron_up { background-position: -0px -144px; }
+.icon-lg-b.icon-chevron_up { background-position: -0px -216px; }
+.icon-chevron_down { background-position: -352px -128px; }
+.icon-lg-b.icon-chevron_down { background-position: -528px -192px; }
+
+.icon-b,
+.icon-w {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+.icon-lg-b,
+.icon-lg-w {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+.icon-b { background-image: url(http://img.shop-pro.jp/tmpl_img/73/icon16_b.png); }
+.icon-w { background-image: url(http://img.shop-pro.jp/tmpl_img/73/icon16_w.png); }
+.icon-lg-b { background-image: url(http://img.shop-pro.jp/tmpl_img/73/icon24_b.png); }
+.icon-lg-w { background-image: url(http://img.shop-pro.jp/tmpl_img/73/icon24_w.png); }
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .icon-b,
+  .icon-w {
+    -webkit-background-size: 368px 320px;
+    background-size: 368px 320px;
+  }
+
+  .icon-lg-b,
+  .icon-lg-w {
+    -webkit-background-size: 552px 480px;
+    background-size: 552px 480px;
+  }
+
+  .icon-b { background-image: url(http://img.shop-pro.jp/tmpl_img/73/icon16_2x_b.png); }
+  .icon-w { background-image: url(http://img.shop-pro.jp/tmpl_img/73/icon16_2x_w.png); }
+  .icon-lg-b { background-image: url(http://img.shop-pro.jp/tmpl_img/73/icon24_2x_b.png); }
+  .icon-lg-w { background-image: url(http://img.shop-pro.jp/tmpl_img/73/icon24_2x_w.png); }
+}
+@media (max-width: 768px) {
+  .icon-b { background-image: url(http://img.shop-pro.jp/tmpl_img/73/icon24_b.png); }
+  .icon-w { background-image: url(http://img.shop-pro.jp/tmpl_img/73/icon24_w.png); }
+}
+@media only screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 768px) and (min--moz-device-pixel-ratio: 2), only screen and (max-width: 768px) and (-o-min-device-pixel-ratio: 2 / 1), only screen and (max-width: 768px) and (min-device-pixel-ratio: 2), only screen and (max-width: 768px) and (min-resolution: 192dpi), only screen and (max-width: 768px) and (min-resolution: 2dppx) {
+  .icon-b { background-image: url(http://img.shop-pro.jp/tmpl_img/73/icon24_2x_b.png); }
+  .icon-w { background-image: url(http://img.shop-pro.jp/tmpl_img/73/icon24_2x_w.png); }
+}

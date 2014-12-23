@@ -1,14 +1,20 @@
 <?php get_header(); ?>
-testhogera
-<div id="contents" class="clearfix">
 
-<div id="main">
-main
+<div id="content">
 
-</div><!--/main-->
+	<main id="main" role="main">
 
-<?php get_sidebar(); ?>
+		<?php /* Start the Loop */ ?>
+		<?php while ( have_posts() ) : the_post(); ?>
 
-</div><!--/contents-->
+			<?php get_template_part( 'content', get_post_format() ); ?>
+
+		<?php endwhile; endif;?>
+
+	</main>
+
+	<?php get_sidebar(); ?>
+
+</div><!-- #content -->
 
 <?php get_footer(); ?>

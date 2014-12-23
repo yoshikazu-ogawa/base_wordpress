@@ -1,4 +1,4 @@
-<footer id="footer">
+<footer id="footer" role="contentinfo" >
 
 	<div id="copyright">
 		<p>Copyright &copy; <?php bloginfo(); ?> All Rights Reserved.</p>
