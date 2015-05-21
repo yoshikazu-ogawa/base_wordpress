@@ -41,7 +41,7 @@ function breadcrumb(){
 	global $post;
 	$str ='';
 	if(!is_home()&&!is_admin()){ 
-		$str.= '<div id="breadcrumb" class="clearfix">';
+		$str.= '<div id="breadcrumb">';
 		$str.= '<ul>';
 		$str.= '<li><a href="'. home_url() .'/">HOME</a></li>';
 		$str.= '<li>&gt;</li>';
