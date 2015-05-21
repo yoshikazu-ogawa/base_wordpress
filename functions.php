@@ -2,9 +2,9 @@
 
 // アイキャッチ
 add_theme_support( 'post-thumbnails' );
-add_image_size( 'newssize', 80, 80, true );
+add_image_size( 'news-size', 80, 80, true );
 
-// 管理画面ロゴ
+// 管理画面ロゴ変更
 function my_custom_login_logo() {
   echo '<style type="text/css">
 h1 a { background-image:url('.get_template_directory_uri().'/img/admin/custom-login-logo.png) !important; } </style>';
@@ -26,6 +26,32 @@ function remove_admin_menu_links() {
      //remove_menu_page('tools.php'); // ツール
      //remove_menu_page('options-general.php'); // 設定
 }
+
+//　管理画面の順序変更
+function custom_menu_order($menu_ord) {
+    if (!$menu_ord) return true;
+    
+    return array(
+        'index.php', // ダッシュボード
+        'separator1', // 最初の区切り線
+        //'separator2', // 二つ目の区切り線
+        'edit.php', // 投稿
+        //'edit.php?post_type=pressrelease-list', // post_typeで指定可能
+        'upload.php', // メディア
+        'link-manager.php', // リンク
+        'edit.php?post_type=page', // 固定ページ
+        'edit-comments.php', // コメント
+        'separator3', // 二つ目の区切り線
+        'themes.php', // 外観
+        'plugins.php', // プラグイン
+        'users.php', // ユーザー
+        'tools.php', // ツール
+        'options-general.php', // 設定
+        'separator-last', // 最後の区切り線
+    );
+}
+add_filter('custom_menu_order', 'custom_menu_order'); // Activate custom_menu_order
+add_filter('menu_order', 'custom_menu_order');
 
 // セルフピンバック禁止
 function no_self_ping( &$links ) {
