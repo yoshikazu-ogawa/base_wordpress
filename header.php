@@ -30,10 +30,10 @@
 
 <header id="header" role="banner">
 
-	<h1>LOGO</h1>
-	<h2><?php bloginfo('description'); ?></h2>
+	<h1 id="logo">LOGO</h1>
+	<h2 id="description"><?php bloginfo('description'); ?></h2>
 
-	<nav role="navigation">
+	<nav id="globalnav" role="navigation">
 		<ul>
 			<li><a href="<?php echo home_url();?>"></a></li>
 			<li><a href="<?php echo home_url();?>"></a></li>
