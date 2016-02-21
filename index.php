@@ -7,7 +7,7 @@
 		$postslist = get_posts('post_type=post&numberposts=5');
 		foreach ($postslist as $post) : setup_postdata($post);?> 
 		 <article>
-			<time datetime="<?php echo get_the_date('c');?>"><?php echo get_the_date();?></time>
+			<p><time datetime="<?php the_time('c'); ?>"><?php the_time('Y年m月d日 G:i'); ?></time></p>
 			<h1><a href="<?php the_permalink();?>"><?php the_title();?></a></h1>
 		 </article>
 		<?php endforeach; ?>
