@@ -1,55 +1,154 @@
-@charset "utf-8";
-
+@charset "UTF-8";
 /*
-Theme Name: 
+Theme Name:base
 Theme URI:
-Description: 
+Description:
 Author:
 Author URI:
+Version:
 */
-
 /*-----------------------------------------------------------
 
 	Reset Style
 
 ---------------------------------------------------------- */
-body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form,
-fieldset, legend, input, textarea, p, blockquote, th, td {
+/* line 18, scss/style.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
   margin: 0;
   padding: 0;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-fieldset, img {
   border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
 }
 
-address, caption, cite, code, dfn, em, strong, th, var {
-  font-style: normal;
-  font-weight: normal;
+/* line 33, scss/style.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
 }
 
-ol, ul {
+/* line 34, scss/style.scss */
+audio, canvas, video {
+  display: inline-block;
+  max-width: 100%;
+}
+
+/* line 35, scss/style.scss */
+html {
+  overflow-y: scroll;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* line 36, scss/style.scss */
+ul, ol {
   list-style: none;
 }
 
-caption, th {
-  text-align: left;
+/* line 37, scss/style.scss */
+blockquote, q {
+  quotes: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+/* line 38, scss/style.scss */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 39, scss/style.scss */
+a:focus {
+  outline: none;
+}
+
+/* line 40, scss/style.scss */
+ins {
+  text-decoration: none;
+}
+
+/* line 41, scss/style.scss */
+mark {
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* line 42, scss/style.scss */
+del {
+  text-decoration: line-through;
+}
+
+/* line 43, scss/style.scss */
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+/* line 44, scss/style.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+/* line 45, scss/style.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/* line 46, scss/style.scss */
+button, input, select, textarea {
+  outline: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   font-size: 100%;
-  font-weight: normal;
 }
 
-input, textarea, select {
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
+/* line 47, scss/style.scss */
+input, textarea {
+  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+  -webkit-appearance: none;
+  border-radius: 0;
+  /* Removing the inner shadow, rounded corners on iOS inputs */
+}
+
+/* line 48, scss/style.scss */
+input[type="checkbox"] {
+  -webkit-appearance: checkbox;
+}
+
+/* line 49, scss/style.scss */
+input[type="radio"] {
+  -webkit-appearance: radio;
+}
+
+/* line 50, scss/style.scss */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 51, scss/style.scss */
+img {
+  -ms-interpolation-mode: bicubic;
+  vertical-align: middle;
 }
 
 /*-----------------------------------------------------------
@@ -57,109 +156,101 @@ input, textarea, select {
 	Common
 		
 ---------------------------------------------------------- */
+/* style
+-------------------------------------- */
+/* line 62, scss/style.scss */
 body {
-  font-size: 12px;
+  font-size: 14px;
   font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ","Meiryo",arial,Osaka,"ＭＳ Ｐゴシック","MS PGothic",Sans-Serif;
-  color: #333;
 }
 
-/* decoration
------------------------------------------------- */
 /* text */
+/* line 68, scss/style.scss */
+strong.marker.yellow {
+  background: linear-gradient(transparent 40%, #ff9 40%);
+}
+
+/* link */
+/* line 73, scss/style.scss */
 a {
-  color: #960A00;
+  color: #000;
   text-decoration: none;
 }
 
+/* line 74, scss/style.scss */
 a:hover {
   color: #b21818;
 }
 
+/* line 75, scss/style.scss */
 a:active, a:focus {
   outline: 0;
 }
 
+/* image */
+/* line 78, scss/style.scss */
+a img {
+  transition: 0.3s linear;
+}
+
+/* line 79, scss/style.scss */
+a img:hover {
+  opacity: 0.6;
+}
+
+/* font */
+/* line 82, scss/style.scss */
 .gosic {
   font-family: 'Hiragino Kaku Gothic Pro','ヒラギノ角ゴ Pro W3','メイリオ', Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
 }
 
+/* line 83, scss/style.scss */
 .serif {
   font-family: "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "ＭＳ Ｐ明朝", "MS PMincho",  serif;
 }
 
 /* float */
+/* line 86, scss/style.scss */
 .f-left {
   float: left;
 }
 
+/* line 87, scss/style.scss */
 .f-right {
   float: right;
 }
 
 /* clearfix */
+/* line 90, scss/style.scss */
 .clearfix {
   width: 100%;
 }
 
+/* line 91, scss/style.scss */
 .clearfix:after {
   content: "";
   display: block;
   clear: both;
 }
 
-/*-----------------------------------------------------------
-
-	stracture
-		
----------------------------------------------------------- */
-#header {
-  width: 980px;
-  margin: 0 auto;
-}
-
-#contents {
-  width: 980px;
-  margin: 0 auto;
-}
-
-#main {
-  float: left;
-  width: 720px;
-}
-
-#side {
-  float: right;
-  width: 215px;
-}
-
-#footer {
-  width: 100%;
-  margin-top: 50px;
-  background-position: center top;
-  background-repeat: repeat-x;
-}
-
+/* variable
+-------------------------------------- */
 /*-----------------------------------------------------------
 
 	header
 		
 ---------------------------------------------------------- */
-/* description
--------------------------------------- */
-#description {
+/* line 107, scss/style.scss */
+#header {
   width: 980px;
   margin: 0 auto;
 }
 
-/* header-inner
--------------------------------------- */
 /*-----------------------------------------------------------
 
 	contents
 		
 ---------------------------------------------------------- */
-/* top
--------------------------------------- */
 /* single.php
 -------------------------------------- */
 /* page.php
@@ -171,19 +262,19 @@ a:active, a:focus {
 	side
 		
 ---------------------------------------------------------- */
+/* line 148, scss/style.scss */
+#side {
+  float: right;
+  width: 215px;
+}
+
 /*-----------------------------------------------------------
 
 	footer
 		
 ---------------------------------------------------------- */
-#footer-inner {
-  width: 950px;
-  padding-top: 5px;
-  margin: 0 auto;
-  height: 30px;
-  font-size: 12px;
-}
-
-#copyright {
-  text-align: right;
+/* line 159, scss/style.scss */
+#footer {
+  width: 100%;
+  margin-top: 50px;
 }

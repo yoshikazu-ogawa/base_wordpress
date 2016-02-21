@@ -56,10 +56,12 @@ img { -ms-interpolation-mode:bicubic;vertical-align: middle; }
 		
 ---------------------------------------------------------- */
 
+/* style
+-------------------------------------- */
+
 body{
-	font-size: 12px;
+	font-size: 14px;
 	font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ","Meiryo",arial,Osaka,"ＭＳ Ｐゴシック","MS PGothic",Sans-Serif;
-	color: #333;
 }
 
 /* text */
@@ -68,10 +70,15 @@ strong.marker.yellow {
 }
 
 /* link */
-a{color:#960A00;text-decoration:none;}
+a{color:#000;text-decoration:none;}
 a:hover{color:#b21818;}
 a:active, a:focus {outline: 0;}
 
+/* image */
+a img{transition: 0.3s linear;}
+a img:hover{opacity: 0.6;}
+
+/* font */
 .gosic{font-family :'Hiragino Kaku Gothic Pro','ヒラギノ角ゴ Pro W3','メイリオ', Meiryo, 'ＭＳ Ｐゴシック', sans-serif;}
 .serif{font-family:"ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "ＭＳ Ｐ明朝", "MS PMincho",  serif;}
 
@@ -84,40 +91,12 @@ a:active, a:focus {outline: 0;}
 .clearfix:after{content: ""; display: block; clear: both;}
 
 
-/*-----------------------------------------------------------
+/* variable
+-------------------------------------- */
 
-	stracture
-		
----------------------------------------------------------- */
+$bgColor: #fff;
+$borderColor: #eee;
 
-#header{
-	width: 980px;
-	margin: 0 auto;
-}
-
-#nav{
-	
-}
-
-#contents{
-	width: 980px;
-	margin: 0 auto;
-}
-
-#main{
-	float: left;
-	width: 720px;
-}
-
-#side{
-	float: right;
-	width: 215px;
-}
-
-#footer{
-	width: 100%;
-	margin-top: 50px;
-}
 
 /*-----------------------------------------------------------
 
@@ -125,7 +104,10 @@ a:active, a:focus {outline: 0;}
 		
 ---------------------------------------------------------- */
 
-
+#header{
+	width: 980px;
+	margin: 0 auto;
+}
 
 
 /*-----------------------------------------------------------
@@ -135,8 +117,7 @@ a:active, a:focus {outline: 0;}
 ---------------------------------------------------------- */
 
 
-/* top
--------------------------------------- */
+
 
 
 
@@ -164,7 +145,10 @@ a:active, a:focus {outline: 0;}
 		
 ---------------------------------------------------------- */
 
-
+#side{
+	float: right;
+	width: 215px;
+}
 
 /*-----------------------------------------------------------
 
@@ -172,14 +156,7 @@ a:active, a:focus {outline: 0;}
 		
 ---------------------------------------------------------- */
 
-#footer-inner{
-	width: 950px;
-	padding-top: 5px;
-	margin: 0 auto;
-	height: 30px;
-	font-size: 12px;
-}
-
-#copyright{
-	text-align: center;
+#footer{
+	width: 100%;
+	margin-top: 50px;
 }

@@ -4,6 +4,19 @@
 add_theme_support( 'post-thumbnails' );
 add_image_size( 'news-size', 80, 80, true );
 
+// 固定ページのビジュアル非表示
+function disable_visual_editor_in_page(){
+	global $typenow;
+	if( $typenow == 'page' ){
+		add_filter('user_can_richedit', 'disable_visual_editor_filter');
+	}
+}
+function disable_visual_editor_filter(){
+	return false;
+}
+add_action( 'load-post.php', 'disable_visual_editor_in_page' );
+add_action( 'load-post-new.php', 'disable_visual_editor_in_page' );
+
 // 管理画面ロゴ変更
 function my_custom_login_logo() {
   echo '<style type="text/css">
